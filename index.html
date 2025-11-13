@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare - Online Medicine & Appointment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b9f4f7b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 class="logo">💊 MediCare</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#medicines">Medicines</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Your Health, Our Priority</h2>
+      <p>Find trusted medicines and book doctor appointments easily.</p>
+      <div class="btn-group">
+        <a href="#medicines" class="btn">Explore Medicines</a>
+        <a href="#appointment" class="btn secondary">Book Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Medicines Section -->
+  <section id="medicines" class="section">
+    <h2>Search & Explore Medicines</h2>
+    <input type="text" id="searchBox" placeholder="🔍 Search for a medicine..." />
+
+    <div class="medicine-grid" id="medicineList">
+      <div class="card" data-name="Paracetamol">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966487.png" alt="Paracetamol">
+        <h3>Paracetamol</h3>
+        <p>Used for fever and mild pain relief.</p>
+      </div>
+      <div class="card" data-name="Amoxicillin">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966506.png" alt="Amoxicillin">
+        <h3>Amoxicillin</h3>
+        <p>Antibiotic used to treat infections.</p>
+      </div>
+      <div class="card" data-name="Vitamin C">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966549.png" alt="Vitamin C">
+        <h3>Vitamin C</h3>
+        <p>Boosts immunity and prevents cold.</p>
+      </div>
+      <div class="card" data-name="Ibuprofen">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966517.png" alt="Ibuprofen">
+        <h3>Ibuprofen</h3>
+        <p>Relieves pain and reduces inflammation.</p>
+      </div>
+      <div class="card" data-name="Cetirizine">
+        <img src="https://cdn-icons-png.flaticon.com/512/2966/2966525.png" alt="Cetirizine">
+        <h3>Cetirizine</h3>
+        <p>Used for allergy and cold relief.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Section -->
+  <section id="appointment" class="section appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <select required>
+        <option value="">Select Doctor Specialization</option>
+        <option>General Physician</option>
+        <option>Dentist</option>
+        <option>Cardiologist</option>
+        <option>Dermatologist</option>
+      </select>
+      <input type="date" required>
+      <input type="time" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2>About MediCare</h2>
+    <p>
+      MediCare helps users find medicine details and book doctor appointments online with ease. 
+      We aim to make healthcare accessible and trustworthy for everyone.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> medicareinfo@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-location-dot"></i> Aditya University, Andhra Pradesh</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MediCare | Designed by You 💚</p>
+  </footer>
+
+</body>
+</html>
